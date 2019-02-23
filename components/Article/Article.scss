@@ -1,0 +1,71 @@
+@import '../../styles/media-queries.scss';
+@import '../../styles/animations/fadeInUp.scss';
+
+.article{
+  h1{
+    font-size: 3.6rem;
+    font-family: FuturaBT;
+    margin-bottom:2rem;
+  }
+  strong{
+    font-weight: bold;
+  }
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 64rem;
+  .skewedBg{
+    padding: 15rem 5rem;
+    transform: skew(0deg, -10deg);
+  }
+  .skewedBgContent{
+    transform: skew(0deg, 10deg);
+  }
+  img{
+    width:33%;
+  }
+}
+
+.article:first-of-type{
+  margin-top:10vh;
+  @include lg { 
+    margin-top:0;
+  }
+  border-top: .2rem solid black;
+  border-left: .2rem solid black;
+  border-right: .2rem solid black;
+  .skewedBg{
+    padding-top:5rem;
+  }
+}
+
+.article{
+  animation: fadeInUp 1s;
+}
+
+.article:last-of-type{
+  border-bottom: .2rem solid black;
+  border-left: .2rem solid black;
+  border-right: .2rem solid black;
+}
+
+.article:nth-of-type(odd){
+  z-index: 2;
+  border-left: .2rem solid black;
+  border-right: .2rem solid black;
+}
+.article:nth-of-type(even){
+  z-index: 1;
+  margin-top:-10rem;
+  color: white;
+  border-left: 0rem;
+  border-right: 0rem;
+  border-bottom: 0rem;
+  .skewedBg{
+    background-color: black
+  }
+}

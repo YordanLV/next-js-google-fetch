@@ -1,0 +1,24 @@
+@import '../../styles/animations/fadeIn.scss';
+@import '../../styles/media-queries.scss';
+
+.close{
+  @include lg {
+    display: block;
+  }
+  display: none;
+  position: fixed;
+  right: 1rem;
+  top:1rem;
+  font-size: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  z-index: 5;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,18 @@
+@import '../../styles/animations/fadeIn.scss';
+
+.button{
+  font-family: FuturaBT;
+  color:#000000;
+  text-transform: lowercase;
+  background-color:transparent;
+	border:0.2rem solid #000000;
+	display:inline-block;
+	font-size:1.6rem;
+	padding:1.8rem 4.5rem;
+  text-decoration:none;
+  animation: fadeIn 1s ease-out;
+}
+
+.button:hover{
+  background-color: #eeeeee;
+}

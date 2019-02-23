@@ -1,0 +1,26 @@
+@import '../styles/media-queries.scss';
+@import '../styles/animations/fadeIn.scss';
+
+.githubIntroText {
+	display: block;
+	font-family: FuturaBT;
+	line-height: 2rem;
+	font-size: 1.4rem;
+	text-align: center;
+	margin-top: 1rem;
+	animation: fadeIn 1s ease-out;
+
+	@include lg {
+		display: none;
+	}
+}
+
+.button {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+
+	@include lg {
+		display: none;
+	}
+}
